@@ -1,0 +1,31 @@
+{
+  "name": "junior-qa-engineer-challenge",
+  "version": "1.0.0",
+  "description": "QA engineer challenge for Brite, there are several exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:chrome:scenario1": "cypress run --browser chrome --spec 'cypress/e2e/exercise_1/scenario1.cy.js'",
+    "test:firefox:scenario1": "cypress run --browser firefox --spec 'cypress/e2e/exercise_1/scenario1.cy.js'",
+    "test:all:scenario1": "npm run test:chrome:scenario1 && npm run test:firefox:scenario1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FcoPG/junior-qa-engineer-challenge.git"
+  },
+  "keywords": [
+    "QA",
+    "challenge",
+    "Engineer"
+  ],
+  "author": "FCO PLAZA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FcoPG/junior-qa-engineer-challenge/issues"
+  },
+  "homepage": "https://github.com/FcoPG/junior-qa-engineer-challenge#readme",
+  "devDependencies": {
+    "cypress": "^13.15.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
